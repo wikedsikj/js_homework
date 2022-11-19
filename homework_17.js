@@ -10,7 +10,7 @@ function fib(n){
     else if (n < 0) {
         n = (-1) * n;
         for(let i = 2; i <= n*2; i++){
-           f[i] = f[i] = (f[i-2] + f[i-1]) * ((-1) ** (i + 1));
+           f[i] = f[i] = (f[i-2] + f[i-1]) * ((-1) ** (i));
         }
         return f[n*2];
     }
